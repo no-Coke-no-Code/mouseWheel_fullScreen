@@ -1,0 +1,13 @@
+1.当所使用的webpack版本为4.xx时，extract-text-webpack-plugin（用于读取css样式，并且把样式单独提取成为一个外部文件）在安装的时候需要加上@next（即安装它的beta版本）
+
+2.webpack4中还需要设置mode，分为production（线上版本）和development（开发版本）。线上版本的大小会被压缩。
+
+3.webpack4中简化了压缩操作，不再需要用到插件了，直接设置optimization属性中的minimize:true即可
+补充：原来webpack4当中已经集成了压缩工具了：uglifyjs-webpack-plugin（直接引入后再plugin里面使用）
+
+4.关于postcss:（1）autoprefixer可以为CSS3的新属性自动写出兼容代码，CSS2不存在兼容性问题的就直接无视掉
+	      （2）若使用postcss,需要在根目录当中建立postcss.config.css文件，并在里面写配置项（在本次例子中引入autoprefixer作为插件）
+
+5.貌似!!!在webpack4当中,如果设置了模式为产品模式，则没有必要对js代码再进行压缩了
+
+6.若CSS代码也想进行压缩，可以使用插件optimize-css-assets-webpack-plugin
