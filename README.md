@@ -21,7 +21,7 @@
   <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;`</div>`
   <br/>
-  //下面是导航小圆点，如不需要可以不加
+  &nbsp;&nbsp;&nbsp;&nbsp;//下面是导航小圆点，如不需要可以不加
   <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;`<div class="navList">`
   <br/>
