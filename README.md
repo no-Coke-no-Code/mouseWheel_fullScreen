@@ -12,8 +12,4 @@
 <h1>具体用法</h1>
 
 主体:
- <br/>
- &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
- '
-  <div class="container"></div>
- '
+
