@@ -4,7 +4,7 @@ const extractTextWebpackPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     entry:'./main.js',
     output:{
-        path:path.resolve(__dirname,'./js/'),
+        path:path.resolve(__dirname,'./result/'),
         filename:'mouseWheel.js'
     },
     // mode:'development',   //这里设置
@@ -57,7 +57,7 @@ module.exports = {
     },
     plugins:[
         new extractTextWebpackPlugin({
-            filename:"./[name].css"
+            filename:"./mouseWheel.css"
         }),
         // 压缩CSS代码用的插件，暂时还没研究怎么用，以后再看看
         // new optimizeCss({
